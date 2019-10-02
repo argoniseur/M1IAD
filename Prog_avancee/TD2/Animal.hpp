@@ -13,6 +13,7 @@ using namespace std;
 	public:
 		Animal();
 		Animal(int, string);
+		Animal(const Animal &a);
 		virtual ~Animal();
 
 		int getAge() const;

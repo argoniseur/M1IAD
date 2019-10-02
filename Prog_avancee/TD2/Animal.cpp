@@ -17,6 +17,11 @@ Animal::Animal(int age, string cri):age(age), cri(cri){
 	cout << "Création d'un animal avec paramètres" << endl;
 }
 
+Animal::Animal(const Animal &a){
+	this->cri = a.cri;
+	this->age = a.age;
+}
+
 Animal::~Animal(){
 
 }
