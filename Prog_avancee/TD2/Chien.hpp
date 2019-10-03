@@ -3,9 +3,10 @@
 
 
 class Chien : public Animal{
+	private	:
 
 
+	public:	
 
 
-	
 }
