@@ -5,8 +5,12 @@
 // Returns the same "parent" vector as BFS() in bfs.1.h.
 
 typedef struct _source_to_node{
-	int node;
-	double distance;
+	pair<int, double> node;
+
+	bool operator<(struct _source_to_node x){
+		return node.second < x.node.second;
+
+	}
 
 }Source2node;
 
